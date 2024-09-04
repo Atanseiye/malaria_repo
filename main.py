@@ -171,16 +171,7 @@ if run:
     st.session_state['input'].append(HumanMessage(content=users_complain))
     response = chat(st.session_state['input'])
     st.session_state['input'].append(AIMessage(content=response.content))
-
-
-    # st.write(extract_users_details(response.content))
-
-
-    # st.write(extract_users_details(users_complain))
-
-
-
-   extracted_details = extract_users_details(response.content)
+    extracted_details = extract_users_details(response.content)
     if extracted_details:
         prediction = predict(response.content)
         if prediction == 1:
