@@ -37,11 +37,11 @@ def is_within_allowed_date():
     return current_date > CUTOFF_DATE
 
 # Check if the current date is within the allowed date
-if is_within_allowed_date():
-    st.error("This app has expired and can no longer be accessed after 5 August 2024.")
-else:
+# if is_within_allowed_date():
+    # st.error("This app has expired and can no longer be accessed after 5 August 2024.")
+# else:
     # Increment the counter and write it back to the file
-    pass
+    # pass
 
 
 # -----------------------------------------------------------------------------------------------
